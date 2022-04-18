@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="stylesheet" href="/dist/output.css">
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-bcg text-white">
+  <div class="nav rounded-xl container flex justify-between items-center border-4 border-border-gray px-9 py-4 w-10/12 mx-auto my-6 text-lg font-bold flex-wrap lg:max-w-xl">
+    <div class="left-side flex flex-col first-line:items-start text-left leading-4">
+      <h5>ROCK</h5>
+      <h5>PAPER</h5>
+      <h5>SCISSORS</h5>
+    </div>
+    <div class="box right-side flex flex-col items-center justify-center w-20 h-20 bg-white text-dif-grey">
+        <p class="text-sm">SCORE<span id="score-display" class="block ml-4">0</span></p>
+    </div>
+  </div>
+
+  
+
+  <div class="container-for-circles block bg-triangle bg-center bg-contain bg-no-repeat my-32" style="display: block;">
+    <div id="small-flex-container" class="flex-center flex flex-row-reverse justify-center items-center relative bottom-8 gap-20">
+      <div id="rock-div">
+      <button id="rock" class="button bg-white rounded-full border-8 border-blue-700 py-7 px-7">
+        <img id="rock" src="/images/icon-rock.svg">
+        </button>
+      </div>
+      <div id="scissors-div">
+        <button id="scissors" class="button bg-white rounded-full border-8 gap- border-red-600 py-6 px-7">
+        <img id="scissors" src="/images/icon-scissors.svg">
+        </button>
+      </div>
+    </div>
+      <div id="paper-div">
+        <button id="paper" class="button last:bg-white rounded-full inline-block relative left-2/4 -translate-x-2/4 px-7 py-6 border-8 border-yellow-500">
+        <img id="paper" src="/images/icon-paper.svg">
+        </button>
+      </div>
+  </div>
+
+  <div id="rules-box" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-white">
+  <p class="text-center text-blue-900 text-2xl font-medium mt-8">RULES</p>
+  <img class="mx-auto mt-24" src="/images/image-rules.svg">
+  <img id="close" class="absolute bottom-10 left-2/4 -translate-x-2/4" src="/images/icon-close.svg">
+  </div>
+
+  <div id="rules-div" class="rules flex text-center justify-center items-center">
+    <button id="rules" class="px-4 py-2 border-2 border-white rounded-md">RULES</button>
+  </div>
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
